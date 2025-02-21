@@ -1,0 +1,114 @@
+
+.recipe-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffdde1, #c2e9fb);
+  }
+  
+ 
+  .recipe-card {
+    width: 450px;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .recipe-card:hover {
+    transform: scale(1.02);
+  }
+  
+
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6b81; 
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .input-box {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .input-box input,
+  .input-box textarea {
+    width: 100%;
+    padding: 12px 15px;
+    padding-left: 45px;
+    border: 2px solid #6a89cc; 
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    background: #ffffff;
+    color: #333;
+    transition: 0.3s ease;
+  }
+  
+  .input-box input:focus,
+  .input-box textarea:focus {
+    background: #e3f2fd;
+    border-color: #4a69bd; 
+  }
+  
+ 
+  .icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6a89cc; 
+    font-size: 20px;
+  }
+  
+ 
+  .error {
+    color: #d50000;
+    font-size: 13px;
+    text-align: left;
+    display: block;
+    margin-top: -8px;
+    margin-bottom: 8px;
+  }
+  
+  
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background: #ff6b81; 
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+  }
+  
+  .submit-btn:hover {
+    background: #ff3b5a;
+    transform: scale(1.05);
+  }
+  
+  
+  .recipe-card {
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
